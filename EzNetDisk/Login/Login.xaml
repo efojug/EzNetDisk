@@ -117,7 +117,7 @@
                       Style="{StaticResource InputFormGroupStyle}">
             <TextBox Style="{StaticResource SignInTextBoxStyle}"
                      pu:TextBoxHelper.InputLimit="UpperCaseLetters,LowerCaseLetters,Digit"
-                     pu:TextBoxHelper.Watermark="UserName / Email / Phone" />
+                     pu:TextBoxHelper.Watermark="用户名/邮箱/手机号" />
         </pu:FormGroup>
         <pu:FormGroup x:Name="FrmPassword"
                       Grid.Row="2"
@@ -127,7 +127,7 @@
                       MinMessageHeight="22">
             <PasswordBox x:Name="PwdPassword"
                          Style="{StaticResource SignInPasswordBoxStyle}"
-                         pu:PasswordBoxHelper.Watermark="Password"
+                         pu:PasswordBoxHelper.Watermark="密码"
                          PasswordChanged="PasswordBox_PasswordChanged" />
         </pu:FormGroup>
         <pu:Switch Grid.Row="3"
