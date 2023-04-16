@@ -40,6 +40,12 @@
         <Reference Include="Panuon.UI.Silver, Version=2.2.20.0, Culture=neutral, processorArchitecture=MSIL">
           <HintPath>..\packages\Panuon.UI.Silver.2.2.20\lib\net472\Panuon.UI.Silver.dll</HintPath>
         </Reference>
+        <Reference Include="Panuon.WPF, Version=1.0.1.0, Culture=neutral, processorArchitecture=MSIL">
+          <HintPath>..\packages\Panuon.WPF.1.0.1\lib\net48\Panuon.WPF.dll</HintPath>
+        </Reference>
+        <Reference Include="Panuon.WPF.UI, Version=1.1.9.3, Culture=neutral, processorArchitecture=MSIL">
+          <HintPath>..\packages\Panuon.WPF.UI.1.1.9.3\lib\net48\Panuon.WPF.UI.dll</HintPath>
+        </Reference>
         <Reference Include="System" />
         <Reference Include="System.Core" />
         <Reference Include="System.Data" />
@@ -56,6 +62,8 @@
             <Generator>MSBuild:Compile</Generator>
             <SubType>Designer</SubType>
         </ApplicationDefinition>
+        <Page Include="Login\Login.xaml" />
+        <Page Include="Login\Register.xaml" />
         <Page Include="MainWindow.xaml">
             <Generator>MSBuild:Compile</Generator>
             <SubType>Designer</SubType>
@@ -63,6 +71,12 @@
         <Compile Include="App.xaml.cs">
             <DependentUpon>App.xaml</DependentUpon>
             <SubType>Code</SubType>
+        </Compile>
+        <Compile Include="Login\Login.xaml.cs">
+          <DependentUpon>Login.xaml</DependentUpon>
+        </Compile>
+        <Compile Include="Login\Register.xaml.cs">
+          <DependentUpon>Register.xaml</DependentUpon>
         </Compile>
         <Compile Include="MainWindow.xaml.cs">
             <DependentUpon>MainWindow.xaml</DependentUpon>
